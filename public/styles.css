@@ -11,7 +11,7 @@ header {
     margin: auto -0.5rem;
     padding: 0.75rem 1.5rem;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #fff;
 }
 
@@ -31,14 +31,29 @@ footer {
     padding: 0.5rem 1rem;
     margin: 1rem;
     border-radius: 0.25rem;
-    box-shadow: .125em .25em .25em #ddd;
+    box-shadow: .125rem .25rem .25rem #ccc;
+    max-width: 16rem;
 
   }
 
 .note h1 {
-    color: blueviolet;
+    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
 }
 
+/* the <p> style applies to nothing because the only <p> elements in the document are part of .note, and I have a more specific assignment for <p> within .note */
 p {
     color: blue;
+}
+
+
+.note p {
+    color: #555;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+
 }
