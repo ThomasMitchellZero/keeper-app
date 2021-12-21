@@ -5,22 +5,19 @@ import Note from "./Note";
 
 import notes from "../notes"
 
-function addNote(currentNote){
-    return(
-        <Note 
-            key={currentNote.key}
-            title={currentNote.title}
-            content={currentNote.title}
-        />
-    )
-}
-
-
 function App(){
     return(
         <div>
             <Header />
-            {notes.map(addNote)}
+            {notes.map( noteItem => {
+                return(
+                    <Note 
+                        key={noteItem.key}
+                        title={noteItem.title}
+                        content={noteItem.content}
+                    />
+                )
+            })}
             <Footer />
         </div>
     );
